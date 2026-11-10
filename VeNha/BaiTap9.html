@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bài tập 9 - Font Awesome Icons</title>
+
+  <!-- Bài 9: liên kết Font Awesome để sử dụng các icon -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="bai9.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-content">
+      <a class="brand" href="index.html"><i class="fa-solid fa-code"></i> CSS Practice</a>
+      <a class="home-link" href="index.html"><i class="fa-solid fa-house"></i> Trang chủ</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="intro container">
+      <span class="eyebrow"><i class="fa-solid fa-icons"></i> BÀI TẬP 9 - FONT AWESOME</span>
+      <h1>Khám phá các biểu tượng <span>Font Awesome</span></h1>
+      <p>Trang web giới thiệu một số lĩnh vực công nghệ với các biểu tượng Font Awesome.
+         Mỗi biểu tượng được thêm bằng thẻ &lt;i&gt; và định dạng bằng CSS.</p>
+    </section>
+
+    <section class="container" aria-labelledby="skills-title">
+      <h2 id="skills-title" class="section-title"><i class="fa-solid fa-layer-group"></i> Các lĩnh vực công nghệ</h2>
+      <div class="feature-grid">
+        <article class="feature-card">
+          <div class="icon-box blue"><i class="fa-solid fa-laptop-code" aria-hidden="true"></i></div>
+          <h3>Web Development</h3>
+          <p>Xây dựng website bằng HTML, CSS và JavaScript.</p>
+        </article>
+        <article class="feature-card">
+          <div class="icon-box purple"><i class="fa-solid fa-palette" aria-hidden="true"></i></div>
+          <h3>UI/UX Design</h3>
+          <p>Thiết kế giao diện trực quan và dễ sử dụng.</p>
+        </article>
+        <article class="feature-card">
+          <div class="icon-box orange"><i class="fa-solid fa-mobile-screen-button" aria-hidden="true"></i></div>
+          <h3>Mobile Apps</h3>
+          <p>Phát triển ứng dụng cho điện thoại thông minh.</p>
+        </article>
+        <article class="feature-card">
+          <div class="icon-box green"><i class="fa-solid fa-database" aria-hidden="true"></i></div>
+          <h3>Data Management</h3>
+          <p>Lưu trữ, quản lý và xử lý dữ liệu hiệu quả.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="container examples" aria-labelledby="examples-title">
+      <h2 id="examples-title" class="section-title"><i class="fa-solid fa-star"></i> Ví dụ icon khác</h2>
+      <div class="icon-list">
+        <span><i class="fa-solid fa-heart" aria-hidden="true"></i> Yêu thích</span>
+        <span><i class="fa-solid fa-envelope" aria-hidden="true"></i> Email</span>
+        <span><i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i> Tìm kiếm</span>
+        <span><i class="fa-solid fa-cart-shopping" aria-hidden="true"></i> Giỏ hàng</span>
+        <span><i class="fa-solid fa-user" aria-hidden="true"></i> Cá nhân</span>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <p><i class="fa-solid fa-graduation-cap"></i> Bài thực hành CSS - Bài 9</p>
+      <a href="index.html"><i class="fa-solid fa-arrow-left"></i> Quay lại danh sách bài tập</a>
+    </div>
+  </footer>
+</body>
+</html>

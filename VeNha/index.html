@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Mini portfolio cá nhân và danh sách bài tập CSS tuần 3 - môn Phát triển ứng dụng Web/TMĐT.">
+  <title>Khánh Linh — CSS Week 03 Portfolio</title>
+  <!-- Font Awesome: icon cho nút, thẻ bài tập và mạng xã hội -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <!-- Google Fonts: font chữ hình khối + font viết tay -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Nunito:wght@400;500;600;700;800;900&family=DM+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="trangchu.css">
+</head>
+<body>
+  <div class="paper" id="top">
+    <!-- NAVIGATION -->
+    <header class="site-header">
+      <a class="logo-stamp" href="#top" aria-label="Về đầu trang"><i class="fa-solid fa-bolt"></i></a>
+      <nav class="nav-main" aria-label="Điều hướng chính">
+        <a href="#top" class="nav-item is-active"><i class="fa-solid fa-star"></i> HOME</a>
+        <a href="#about" class="nav-item"><i class="fa-solid fa-user"></i> ABOUT</a>
+        <a href="#featured" class="nav-item"><i class="fa-solid fa-table-cells-large"></i> HIGHLIGHTS</a>
+        <a href="#bai-tap" class="nav-item"><i class="fa-solid fa-diamond"></i> CSS EXERCISES</a>
+      </nav>
+      <div class="nav-actions">
+        <!-- THAY URL BÊN DƯỚI BẰNG LINK CÁ NHÂN -->
+        <a class="social-dot yellow" href="https://github.com/" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+        <a class="social-dot pink" href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+        <a class="social-dot mint" href="mailto:you@example.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+        <a class="contact-link" href="#contact"><i class="fa-solid fa-heart"></i> CONTACT</a>
+      </div>
+    </header>
+
+    <main>
+      <!-- HERO -->
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-notes">
+          <span class="pill mint-pill"><i class="fa-solid fa-wand-magic-sparkles"></i> MADE WITH CSS</span>
+          <span class="scribble">my name is <span class="scribble-underline"></span></span>
+          <span class="pill butter-pill">SWEAT THE DETAILS <i class="fa-solid fa-sparkles"></i></span>
+        </div>
+        <!-- CHỈNH TÊN CỦA BẠN TRONG THẺ H1 -->
+        <div class="title-wrap"><h1 id="hero-title">KHÁNH LINH</h1></div>
+        <div class="hero-footnotes">
+          <span class="sticky-label sticky-yellow">WEB / TMĐT STUDENT</span>
+          <span class="fine-print"><span class="tiny-blue"></span> CSS WEEK 03 · PERSONAL PORTFOLIO</span>
+          <span class="sticky-label sticky-green">hello, world! <span aria-hidden="true">↗</span></span>
+        </div>
+        <div class="hero-message">
+          <div class="mini-portrait left-portrait"><img src="assets/anh-ca-nhan.jpg" alt="Ảnh đại diện nhỏ" onerror="this.onerror=null;this.src='assets/avatar-minh-hoa.svg'"></div>
+          <p>Mình biến những dòng CSS thành <span class="target-sticker" aria-hidden="true"></span><br>giao diện <em>đơn giản nhưng thú vị.</em> <span class="flower-sticker" aria-hidden="true">✿</span></p>
+          <div class="mini-portrait right-portrait"><img src="assets/anh-ca-nhan.jpg" alt="Ảnh đại diện nhỏ" onerror="this.onerror=null;this.src='assets/avatar-minh-hoa.svg'"></div>
+        </div>
+        <a href="#bai-tap" class="black-button"><span class="pixel-dot">↗</span> XEM BÀI TẬP <i class="fa-solid fa-arrow-down"></i></a>
+        <div class="hero-swoosh" aria-hidden="true"></div>
+      </section>
+
+      <!-- ABOUT -->
+      <section class="about section-pad" id="about" aria-labelledby="about-heading">
+        <div class="eyebrow handwritten">about me!</div>
+        <div class="about-layout">
+          <div class="polaroid left-photo">
+            <!-- Ảnh cần thêm: assets/anh-ca-nhan.jpg -->
+            <span class="washi-tape tape-blue" aria-hidden="true"></span>
+            <img src="assets/anh-ca-nhan.jpg" alt="Ảnh cá nhân" onerror="this.onerror=null;this.src='assets/avatar-minh-hoa.svg'">
+            <span class="polaroid-caption">that's me! ✳</span>
+          </div>
+          <div class="about-copy">
+            <h2 id="about-heading" class="outline-label">what's up</h2>
+            <p class="handwritten intro-text">Hi! Mình là <strong>Khánh Linh</strong>, sinh viên đang học môn Phát triển ứng dụng Web/TMĐT. Đây là góc nhỏ để mình lưu lại các bài thực hành HTML &amp; CSS trong tuần 3. Từng bài là một bước để mình hiểu hơn về cách xây dựng giao diện web. <span aria-hidden="true">✎</span></p>
+            <div class="quick-info" aria-label="Thông tin cá nhân">
+              <!-- SỬA MSSV, LỚP TRƯỚC KHI NỘP -->
+              <span><i class="fa-solid fa-id-card"></i> MSSV: [NHẬP MSSV]</span>
+              <span><i class="fa-solid fa-graduation-cap"></i> LỚP: [NHẬP LỚP]</span>
+            </div>
+            <div class="skill-tags">
+              <span class="tag-yellow">HTML &amp; CSS <i class="fa-solid fa-code"></i></span>
+              <span class="tag-mint">RESPONSIVE <i class="fa-solid fa-mobile-screen"></i></span>
+              <span class="tag-pink">WEB DESIGN <i class="fa-solid fa-paintbrush"></i></span>
+              <span class="tag-blue">FONT AWESOME <i class="fa-solid fa-icons"></i></span>
+            </div>
+          </div>
+          <div class="polaroid right-photo">
+            <!-- Ảnh tùy chọn: assets/goc-hoc-tap.jpg -->
+            <span class="washi-tape tape-yellow" aria-hidden="true"></span>
+            <img src="assets/goc-hoc-tap.jpg" alt="Góc học tập và làm web" onerror="this.onerror=null;this.src='assets/workspace-placeholder.svg'">
+            <span class="polaroid-caption">my workspace ♡</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- FEATURED CASE STUDIES -->
+      <section class="featured section-pad" id="featured" aria-labelledby="featured-heading">
+        <div class="section-intro">
+          <span class="micro-label">✳ A FEW THINGS I'VE BUILT</span>
+          <h2 id="featured-heading">SELECTED <span>WORK.</span></h2>
+          <p>2 bài thực hành nổi bật trong hành trình học CSS tuần này.</p>
+        </div>
+        <div class="project-tab-row" aria-hidden="true">
+          <span class="project-tab tab-blue">✦ FEATURE 01</span>
+          <span class="project-tab tab-black">✦ FEATURE 02</span>
+        </div>
+        <article class="project project-dark">
+          <div class="project-content">
+            <div class="project-meta"><i class="fa-solid fa-circle"></i> CSS / BÀI 08</div>
+            <h3>CSS<br>Playground<span class="period">.</span></h3>
+            <p>Hiệu ứng CSS, bố cục và cách tổ chức các thành phần trong một trang web.</p>
+            <a class="project-link" href="BaiTap8.html">VIEW EXERCISE <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+          <div class="preview preview-dark" aria-hidden="true">
+            <div class="preview-window-top"><span></span><span></span><span></span><b>WEB DESIGN LAB</b></div>
+            <div class="preview-window-body">
+              <div class="demo-nav">CSS WORKS <span>EXPLORE • STUDY • BUILD</span></div>
+              <div class="demo-heading">CREATIVE<br><em>EXPERIMENTS</em></div>
+              <div class="demo-cards"><span></span><span></span><span></span></div>
+            </div>
+            <span class="preview-tape tape-top" aria-hidden="true"></span>
+          </div>
+        </article>
+        <article class="project project-yellow">
+          <div class="project-content">
+            <div class="project-meta"><i class="fa-solid fa-circle"></i> ICON DESIGN / BÀI 09</div>
+            <h3>Icon<br>Lab<span class="period">.</span></h3>
+            <p>Ứng dụng Font Awesome để thêm biểu tượng sinh động vào giao diện website.</p>
+            <a class="project-link" href="BaiTap9.html">VIEW EXERCISE <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+          <div class="preview preview-light" aria-hidden="true">
+            <div class="preview-window-top"><span></span><span></span><span></span><b>FONT AWESOME</b></div>
+            <div class="icon-board">
+              <div class="icon-board-title">GOOD DESIGN<br><strong>STARTS HERE.</strong></div>
+              <div class="icon-board-grid">
+                <span><i class="fa-solid fa-code"></i></span>
+                <span><i class="fa-solid fa-palette"></i></span>
+                <span><i class="fa-solid fa-rocket"></i></span>
+                <span><i class="fa-solid fa-heart"></i></span>
+              </div>
+            </div>
+            <span class="preview-tape tape-bottom" aria-hidden="true"></span>
+          </div>
+        </article>
+      </section>
+
+      <!-- ALL EXERCISES: links required by assignment 10 -->
+      <section class="all-exercises section-pad" id="bai-tap" aria-labelledby="bai-tap-heading">
+        <div class="exercises-heading">
+          <div>
+            <div class="handwritten overline">your next stop ↓</div>
+            <h2 id="bai-tap-heading">ALL MY <span>CSS EXERCISES</span></h2>
+          </div>
+          <span class="exercise-counter"><i class="fa-solid fa-star"></i> 08 LINKS</span>
+        </div>
+        <div class="exercise-grid">
+          <a href="BaiTap1.html" class="exercise-card"><span class="num">01</span><i class="fa-solid fa-gamepad card-symbol"></i><strong>CSS GAMES</strong><small>CSS Diner &amp; Speedrun</small><span class="arrow">↗</span></a>
+          <a href="BaiTap2.html" class="exercise-card"><span class="num">02</span><i class="fa-solid fa-font card-symbol"></i><strong>TEXT STYLING</strong><small>Chữ, nền, overflow</small><span class="arrow">↗</span></a>
+          <a href="BaiTap4.html" class="exercise-card"><span class="num">04</span><i class="fa-solid fa-bars card-symbol"></i><strong>NAVIGATION</strong><small>Menu bằng CSS</small><span class="arrow">↗</span></a>
+          <a href="BaiTap5.html" class="exercise-card"><span class="num">05</span><i class="fa-solid fa-window-maximize card-symbol"></i><strong>LANDING PAGE</strong><small>Shared Hosting</small><span class="arrow">↗</span></a>
+          <a href="BaiTap6.html" class="exercise-card"><span class="num">06</span><i class="fa-solid fa-images card-symbol"></i><strong>PORTFOLIO</strong><small>Gallery &amp; categories</small><span class="arrow">↗</span></a>
+          <a href="BaiTap7.html" class="exercise-card"><span class="num">07</span><i class="fa-solid fa-table-columns card-symbol"></i><strong>WEB LAYOUT</strong><small>Header, nav &amp; footer</small><span class="arrow">↗</span></a>
+          <a href="BaiTap8.html" class="exercise-card"><span class="num">08</span><i class="fa-solid fa-wand-magic-sparkles card-symbol"></i><strong>CSS EFFECTS</strong><small>Heroes &amp; transitions</small><span class="arrow">↗</span></a>
+          <a href="BaiTap9.html" class="exercise-card"><span class="num">09</span><i class="fa-solid fa-icons card-symbol"></i><strong>FONT AWESOME</strong><small>Icon library</small><span class="arrow">↗</span></a>
+        </div>
+        <p class="assignment-note"><i class="fa-solid fa-thumbtack"></i> Theo đề bài, bài 3 được lựa chọn thay thế bằng nhóm bài 4–7, nên trang này dẫn đến các bài đã thực hiện.</p>
+      </section>
+
+      <!-- CONTACT FOOTER -->
+      <section class="contact section-pad" id="contact" aria-labelledby="contact-heading">
+        <div class="contact-doodle">✺</div>
+        <div>
+          <span class="micro-label">SAY HELLO!</span>
+          <h2 id="contact-heading">LET'S KEEP <em>LEARNING.</em></h2>
+          <p>Cảm ơn bạn đã ghé thăm góc nhỏ học CSS của mình!</p>
+        </div>
+        <div class="contact-buttons">
+          <!-- THAY LINK GITHUB, FACEBOOK, EMAIL CÁ NHÂN -->
+          <a href="https://github.com/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i> GITHUB</a>
+          <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-facebook-f"></i> FACEBOOK</a>
+          <a href="mailto:you@example.com"><i class="fa-solid fa-envelope"></i> EMAIL</a>
+        </div>
+      </section>
+    </main>
+    <footer class="footer"><span>© CSS WEEK 03 · PERSONAL PORTFOLIO</span><span>MADE WITH <i class="fa-solid fa-heart"></i> &amp; CSS</span><a href="#top">BACK TO TOP ↑</a></footer>
+  </div>
+</body>
+</html>
